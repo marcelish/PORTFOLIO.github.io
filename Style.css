@@ -70,9 +70,15 @@ body {
         width: 0;
     }
 }
-@keyframes manipActiveHover {
-    100% {
-        pointer-events: auto;
+
+@media only screen and (max-width: 768px) {
+    /* Add mobile-specific styles here */
+    .header {
+        padding: 20px 5%;
+    }
+
+    .navbar a {
+        margin-left: 15px;
     }
 }
 
@@ -301,8 +307,52 @@ body {
 span {
     color: white;
 }
+@media (max-width: 768px) {
+    .home {
+        padding: 0 5%; /* Adjust padding for smaller screens */
+    }
+
+    .home-content {
+        max-width: 100%; /* Make content full width on smaller screens */
+    }
+
+    .home-content h1 {
+        font-size: 36px; /* Adjust font size for smaller screens */
+    }
+
+    .home-content h3 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    .home-content p {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .home-content .btn-box {
+        width: 100%; /* Make button box full width on smaller screens */
+    }
+
+    .home-content .btn-box a {
+        width: 100%; /* Make buttons full width on smaller screens */
+    }
+
+    .home-sci {
+        bottom: 60px; /* Adjust position for smaller screens */
+    }
+
+    .home-sci a {
+        width: 30px; /* Adjust size for smaller screens */
+        height: 30px;
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .home-imgHover {
+        width: 100%; /* Make the image hover full width on smaller screens */
+    }
+}
 
 /* all project content 1 ------------------------------------------------------------------------------------------ */
+/* Default styles for larger screens */
 .project {
     height: 100vh;
     background: #000;
@@ -324,7 +374,6 @@ span {
     height: auto;
     margin-right: 200px;
     margin-bottom: 150px;
-    /* Adjust this value to move the image up */
     position: relative;
 }
 
@@ -381,7 +430,6 @@ span {
     width: 345px;
     height: 50px;
     left: 3%;
-    /* Change from left: 61.5% to left: 0 */
 }
 
 .project-content-1 .btn-box-1 a {
@@ -420,7 +468,52 @@ span {
 .project-content-1 .btn-box-1 a:nth-child(2):hover {
     color: #081b29;
 }
+
+/* making this section phone comaptible*/
+@media (max-width: 768px) {
+    .project {
+        padding: 0 5%; /* Adjust padding for smaller screens */
+    }
+
+    .project-content-1 {
+        flex-direction: column; /* Adjust flex direction for smaller screens */
+        align-items: center; /* Adjust alignment for smaller screens */
+        margin-top: 50px; /* Adjust margin top for smaller screens */
+    }
+
+    .project-content-1 img {
+        width: 70%; /* Adjust image width for smaller screens */
+        margin-right: 0; /* Remove right margin for smaller screens */
+        margin-bottom: 0px; /* Adjust bottom margin for smaller screens */
+    }
+
+    .project-content-1 h3 {
+        left: 0; /* Adjust left position for smaller screens */
+        width: 90%; /* Adjust width for smaller screens */
+        text-align: center; /* Use text-align to center the content horizontally */
+    }
+
+    .project-content-1 p {
+        left: 0; /* Adjust left position for smaller screens */
+        width: 94%; /* Adjust width for smaller screens */
+        text-align: center; /* Use text-align to center the content horizontally */
+    }
+
+    .project-content-1 .btn-box-1 {
+        left: 0; /* Adjust left position for smaller screens */
+        width: 100%; /* Adjust width for smaller screens */
+        justify-content: center; /* Use justify-content to center the content horizontally */
+        
+    }
+
+    .project-content-1 .btn-box-1 a {
+        width: 100%; /* Adjust width for smaller screens */
+        padding: 0 20px; /* Adjust padding for smaller screens */
+    }
+}
+
 /* all project content 2 ----------------------------------------------------------------------------------------------------------------------*/
+/* Default styles for larger screens */
 .project2 {
     height: 100vh;
     background: #111;
@@ -453,10 +546,48 @@ span {
     width: 0;
     height: 100%;
     background: #111;
-    z-index: 1; /* Set a lower z-index for the pseudo-element */
+    z-index: 1;
     animation: showRight 5s ease forwards;
 }
+/* making this section phone comaptible*/
+@media (max-width: 768px) {
+    .project2 {
+        padding: 0 5%; /* Adjust padding for smaller screens */
+    }
 
+    .project2 .project-content-1 {
+        flex-direction: column; /* Adjust flex direction for smaller screens */
+        align-items: center; /* Adjust alignment for smaller screens */
+    }
+
+    .project2 .project-content-1 img {
+        width: 80%; /* Adjust image width for smaller screens */
+        margin-right: 0; /* Remove right margin for smaller screens */
+        margin-bottom: 50px; /* Adjust bottom margin for smaller screens */
+    }
+
+    .project2 .project-content-1 h3 {
+        left: 0; /* Adjust left position for smaller screens */
+        width: 90%; /* Adjust width for smaller screens */
+        text-align: center; /* Use text-align to center the content horizontally */
+    }
+
+    .project2 .project-content-1 p {
+        left: 0; /* Adjust left position for smaller screens */
+        width: 95%; /* Adjust width for smaller screens */
+        text-align: center; /* Use text-align to center the content horizontally */
+    }
+
+    .project2 .project-content-1 .btn-box-1 {
+        left: 0; /* Adjust left position for smaller screens */
+        width: 100%; /* Adjust width for smaller screens */
+        justify-content: center; /* Use justify-content to center the content horizontally */
+    }
+
+    .project2 .project-content-1 .btn-box-1 a {
+        width: 100%; /* Adjust width for smaller screens */
+    }
+}
 /* all project content 3 ----------------------------------------------------------------------------------------------------------------------*/
 .project3 {
     height: 100vh;
@@ -566,6 +697,45 @@ span {
 .project-content-3 .btn-box-2 a:nth-child(2):hover {
     color: #081b29;
 }
+/* making this section phone comaptible*/
+@media (max-width: 768px) {
+    .project3 {
+        padding: 0 5%; /* Adjust padding for smaller screens */
+    }
+
+    .project-content-3 {
+        flex-direction: column; /* Adjust flex direction for smaller screens */
+        align-items: center; /* Adjust alignment for smaller screens */
+    }
+
+    .project-content-3 img {
+        width: 100%; /* Adjust image width for smaller screens */
+        margin-right: 0; /* Remove right margin for smaller screens */
+        margin-bottom: 50px; /* Adjust bottom margin for smaller screens */
+    }
+
+    .project-content-3 h3 {
+        left: 0; /* Adjust left position for smaller screens */
+        width: 100%; /* Adjust width for smaller screens */
+        text-align: center; /* Use text-align to center the content horizontally */
+    }
+
+    .project-content-3 p {
+        left: 0; /* Adjust left position for smaller screens */
+        width: 100%; /* Adjust width for smaller screens */
+        text-align: center; /* Use text-align to center the content horizontally */
+    }
+
+    .project-content-3 .btn-box-2 {
+        left: 0; /* Adjust left position for smaller screens */
+        width: 100%; /* Adjust width for smaller screens */
+        justify-content: center; /* Use justify-content to center the content horizontally */
+    }
+
+    .project-content-3 .btn-box-2 a {
+        width: 100%; /* Adjust width for smaller screens */
+    }
+}
 
  /* CONTACT PAGE STYLE ------------------------------------------------------------- */
 
@@ -640,4 +810,3 @@ span {
 .contact .social-icon:hover {
     color: #081b29;
 }
-
